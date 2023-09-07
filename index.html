@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Manipulando o DOM</h1>
+    <p id="test" name="paragrafo">Estou aprendendo</p>
+    <div id="div1">
+        <p>
+            JavaScript é top
+        </p>
+    </div>
+    <script>
+        var x = window.document.getElementsByTagName('h1')[0]
+        x.style.color = 'red'
+        var y = window.document.getElementsByName('paragrafo')[0]
+        y.style.color = 'red'
+        y.style.backgroundColor = 'blue'
+        // window.alert(y.innerText)
+        // var z = window.document.getElementById('div1')
+        // z.style.textAlign = 'left'
+        var z = window.document.querySelector('div#div1')
+        z.style.textAlign = 'left'
+        window.document.write('Adicionando qualquer coisa...')     //write permite adicionar qualquer coisa no documento
+
+        var f = window.document.getElementsByTagName('h1')[0]
+        f.innerHTML += ' Alterando o texto' // o innerHTML permite manipular o elemento selecionado o += permite acrescentar um texto
+        
+</script>
+</body>
+</html>
